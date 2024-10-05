@@ -8,7 +8,7 @@
   "favicon": "/favicon.svg",
   "modeToggle": {
     "default": "light",
-    "isHidden": true
+    "isHidden": false
   },
   "colors": {
     "primary": "#007AFF",
