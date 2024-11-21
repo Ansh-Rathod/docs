@@ -33,7 +33,10 @@
     "url": "https://pimosa.app/download"
   },
   "navigation": [
-    { "group": "General", "pages": ["general/supported-file-formats"] },
+    {
+      "group": "General",
+      "pages": ["general/supported-file-formats", "general/supported-devices"]
+    },
     {
       "group": "Installation",
       "pages": ["installation/install-ffmpeg-and-imagemagick-on-mac"]
