@@ -39,7 +39,10 @@
     },
     {
       "group": "Installation",
-      "pages": ["installation/install-ffmpeg-and-imagemagick-on-mac"]
+      "pages": [
+        "installation/install-ffmpeg-and-imagemagick-on-mac",
+        "installation/install-libraries-on-mac"
+      ]
     },
     {
       "group": "License key guide",

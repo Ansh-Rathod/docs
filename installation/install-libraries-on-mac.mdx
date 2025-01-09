@@ -1,0 +1,75 @@
+---
+title: Installing Required Libraries Automatically
+description: Learn how to install FFmpeg and ImageMagick, essential libraries required for Pimosa to handle media processing and image manipulation on macOS.
+---
+
+### Installing Required Dependencies for Pimosa
+
+Pimosa requires two powerful libraries - FFmpeg and ImageMagick - to handle media processing and image manipulation tasks. This guide will walk you through installing these essential dependencies on your Mac.
+
+### Why Does Pimosa Need These Libraries?
+
+Pimosa relies on these libraries for several core features:
+
+- FFmpeg: A multimedia framework that powers Pimosa's video processing capabilities
+- ImageMagick: A robust tool that handles Pimosa's image manipulation tasks
+
+### Quick Installation
+
+We've created a simple installation script that handles everything automatically. Just follow these two steps:
+
+## Step 1: Prepare for Installation
+
+```bash
+sudo -v
+```
+
+This command validates your administrator privileges, which are needed to install the required libraries.
+
+## Step 2: Run the Installation Script
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ansh-Rathod/pimosa-builds/HEAD/maclibsinstall.sh)"
+```
+
+Our script will:
+1. Check for existing installations
+2. Install Homebrew (Mac's package manager) if needed
+3. Install FFmpeg and ImageMagick
+4. Verify the installations
+5. Show you where everything is installed
+
+## What to Expect
+
+The installation process is automated and will:
+- Detect your Mac's system architecture
+- Install only what's missing (no duplicate installations)
+- Set up proper system paths
+- Validate all installations
+- Provide clear feedback during the process
+
+## Troubleshooting
+
+If you encounter any issues:
+1. Make sure you have a stable internet connection
+2. Ensure you have at least 1GB of free disk space
+3. Check that you entered your administrator password when prompted
+4. If Pimosa still can't find the libraries, verify the installation paths shown in the script output
+
+## Verification
+
+After installation, you can verify that Pimosa can access these libraries by:
+1. Opening Pimosa
+2. Click on Setup button 
+3. Checking the paths output by the installation script
+
+## Next Steps
+
+Once installed, you can start using all of Pimosa's media processing features. Check out our other documentation pages to learn more about what you can do with Pimosa.
+
+## Support
+
+If you run into any issues with the installation or using Pimosa with these libraries, please:
+1. Contact the support https://pimosa.app/support
+2. Join our community Discord
+3. Open an issue on our GitHub repository
