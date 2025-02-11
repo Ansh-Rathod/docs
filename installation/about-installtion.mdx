@@ -1,0 +1,79 @@
+---
+title: Learn more about libraries installation
+description: how Pimosa installs ExifTool, FFmpeg, and ImageMagick automatically, and how to install them manually on macOS.
+---
+
+import { Alert } from "components/Alert";
+
+---
+
+Pimosa relies on three essential libraries to deliver powerful media processing capabilities:
+
+- **FFmpeg**
+- **ImageMagick**
+- **ExifTool**
+
+These libraries are automatically installed during the initial startup of Pimosa, ensuring a smooth experience for non-technical users. However, if you prefer manual installation, we've provided instructions below.
+
+### How It Works
+
+Pimosa runs the following command in the background to handle the library installations seamlessly:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ansh-Rathod/pimosa-builds/HEAD/install_libs_mac.sh)"
+```
+
+This command ensures that you don’t have to deal with the complexities of manual installation.
+
+<Alert type="info">
+  You don't need any technical knowledge—just start Pimosa, and everything is
+  set up automatically!
+</Alert>
+
+## 🔒 Your Security Matters
+
+During the automated setup, Pimosa **may** (mostly it won't if homebrew is installed) prompt for your device password to grant administrative access needed for installing the libraries. **Rest assured:**
+
+- **Your password is never stored, logged, or accessed by Pimosa.** installation script uses native macOS APIs to grant administrative access.
+- The password stays within the secure environment of the installation script.
+- installion script is forever open-source, so you can verify its security.
+
+installation script source code:
+https://github.com/Ansh-Rathod/pimosa-builds/blob/main/install_libs_mac.sh
+
+Your security and privacy are our top priorities.
+
+## Automated Setup
+
+Pimosa automates the installation of these libraries during the first launch using an open-source script. This process ensures:
+
+- **Hassle-free setup**: No terminal commands needed.
+- **Optimized for macOS**: Works seamlessly on macOS.
+- **Automatic updates**: Libraries are kept up-to-date in the background.
+
+## Why These Libraries Are Needed
+
+### FFmpeg
+
+FFmpeg is the backbone of Pimosa's video and audio processing features. It enables:
+
+- Video compression, trimming, and conversion.
+- Audio extraction and manipulation.
+- GIF creation and much more.
+
+### ImageMagick
+
+ImageMagick handles image processing tasks, allowing Pimosa to:
+
+- Resize, crop, flip, and rotate images.
+- Apply filters and effects.
+- Convert between different image formats.
+
+### ExifTool
+
+ExifTool is used to read, write, and edit metadata in image, audio, and video files. Pimosa uses ExifTool to:
+
+- Extract metadata like creation date, camera model, GPS info, etc.
+- Modify metadata for batch processing.
+
+Pimosa is designed to handle these installations automatically. Manual setup is only recommended if you encounter issues with the automated process on macOS.
