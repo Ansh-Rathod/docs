@@ -1,0 +1,54 @@
+---
+title: "Installing libraries on windows Manually"
+description: "Step-by-step guide to installing FFmpeg, ImageMagick, and ExifTool using Winget on Windows."
+---
+
+---
+
+### Installing FFmpeg, ImageMagick, and ExifTool on Windows
+
+This guide will help you install **FFmpeg**, **ImageMagick**, and **ExifTool** on Windows using the built-in command-line package manager `winget`.
+
+### Prerequisites
+
+Ensure that you have Windows 10 (version 1809 or later) or Windows 11, where `winget` is available by default.
+
+### Installing FFmpeg, ImageMagick, and ExifTool
+
+1. Click on the **Start Menu** or press the **Windows Key**.
+2. Type **cmd** or **Command Prompt** in the search bar.
+3. In the Command Prompt window, type the following command and press **Enter**:
+
+```sh
+winget install -e --id Gyan.FFmpeg ImageMagick.ImageMagick PhilHarvey.ExifTool
+```
+
+### Verifying Installation Paths
+
+After installation, you can verify the installation paths of the tools by running:
+
+1. Open Command Prompt again if it's not already open.
+2. Run the following commands one by one and press **Enter** after each:
+
+```sh
+where ffmpeg
+where magick
+where exiftool
+```
+
+3. You can paste the output path of the each command in the text field of the Pimosa app and you're good to use the app.
+
+   <img
+     src="../images/screenshot1.png"
+     alt="step 2"
+     width={1000}
+     style={{ display: "block", margin: "0 auto" }}
+   />
+
+### Important Note 🚨
+
+After installation, **you must open a new Command Prompt window** for the system to recognize the installed tools. If you don't, the commands may not work as expected.
+
+---
+
+Following these steps ensures that FFmpeg, ImageMagick, and ExifTool are properly installed and accessible from the command line on Windows.

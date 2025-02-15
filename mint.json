@@ -41,6 +41,8 @@
       "group": "Installation",
       "pages": [
         "installation/install-ffmpeg-and-imagemagick-on-mac",
+        "installation/install-libraries-on-windows",
+
         "installation/install-libraries-on-mac",
         "installation/about-installtion"
       ]
